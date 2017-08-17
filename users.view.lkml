@@ -5,7 +5,7 @@ view: users {
     primary_key: yes
     type: string
     sql: ${TABLE}.id ;;
-    tags: ["user_id"]
+    tags: []
   }
 
   dimension: active {

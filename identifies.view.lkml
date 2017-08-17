@@ -17,12 +17,6 @@ view: identifies {
     sql: ${TABLE}.received_at ;;
   }
 
-  dimension: user_id {
-    type: string
-    # hidden: true
-    sql: ${TABLE}.user_id ;;
-  }
-
   measure: count {
     type: count
     drill_fields: [users.id]

@@ -24,12 +24,6 @@ view: groups {
     sql: ${TABLE}.received_at ;;
   }
 
-  dimension: user_id {
-    type: string
-    # hidden: true
-    sql: ${TABLE}.user_id ;;
-  }
-
   measure: count {
     type: count
     drill_fields: [group_id, users.id, satisfaction_ratings.count, tickets.count]

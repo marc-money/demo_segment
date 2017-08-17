@@ -52,11 +52,6 @@ order by a.session_id, a.track_sequence_number
     sql: ${TABLE}.event ;;
   }
 
-  dimension: user_id {
-    hidden: yes
-    sql: ${TABLE}.user_id ;;
-  }
-
   dimension_group: received_at {
     type: time
     datatype: datetime
@@ -146,7 +141,6 @@ order by a.session_id, a.track_sequence_number
       session_id,
       track_sequence_number,
       event,
-      user_id,
       event_2,
       event_3,
       event_4,

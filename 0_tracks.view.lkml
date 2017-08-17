@@ -22,12 +22,6 @@ view: tracks {
     sql: ${TABLE}.received_at ;;
   }
 
-  dimension: user_id {
-    type: string
-    # hidden: true
-    sql: ${TABLE}.user_id ;;
-  }
-
   dimension: uuid {
     type: number
     value_format_name: id
