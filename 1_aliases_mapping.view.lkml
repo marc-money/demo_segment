@@ -12,10 +12,7 @@ view: aliases_mapping {
 
       select
         distinct anonymous_id as alias
-        over(
-          partition by anonymous_id
-          order by received_at
-          rows between unbounded preceding and unbounded following),anonymous_id) as looker_visitor_id
+        ,coalesce(anonymous_id) as looker_visitor_id
       from all_mappings
        ;;
   }
