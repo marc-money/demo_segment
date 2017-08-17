@@ -15,8 +15,6 @@ view: mapped_tracks {
           , t.event as event
           , t.uuid
           from moneystreamios.tracks as t
-          inner join ${aliases_mapping.SQL_TABLE_NAME} as a2v
-          on a2v.alias = coalesce(t.user_id, t.anonymous_id)
         )
        ;;
   }
