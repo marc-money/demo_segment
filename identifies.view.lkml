@@ -1,5 +1,5 @@
 view: identifies {
-  sql_table_name: segment.identifies ;;
+  sql_table_name: moneystreamios.identifies ;;
 
   dimension: anonymous_id {
     type: string
